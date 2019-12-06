@@ -1,0 +1,19 @@
+{
+    "name": "The Lorem Ipsum Machine",
+    "version": "1.0",
+    "manifest_version": 2,
+
+    "description": "Records audio and video from your desktop and saves it in file explorer.",
+    "icons": {
+        "128": "extensionIcon.png"
+    },
+
+    "browser_action": {
+        "default_title": "Record audio and video from your desktop!",
+        "default_popup": "popup.html"
+    },
+
+    "permissions": [
+        "http://*/*", "https://*/*"
+    ]
+}
