@@ -1,19 +1,16 @@
 {
-    "name": "The Lorem Ipsum Machine",
-    "version": "1.0",
+    "name": "Lorem Ipsum Machine",
     "manifest_version": 2,
-
-    "description": "Records audio and video from your desktop and saves it in file explorer.",
-    "icons": {
-        "128": "extensionIcon.png"
-    },
-
+    "version": "1.0",
+    "description": "Captures and records the screen",
     "browser_action": {
-        "default_title": "Record audio and video from your desktop!",
-        "default_popup": "popup.html"
+      "default_popup": "popup.html"
     },
-
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+      },
     "permissions": [
-        "http://*/*", "https://*/*", "activeTab"
+      "tabs"
     ]
-}
+  }
